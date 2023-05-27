@@ -22,6 +22,13 @@ app.post("/minus", function (req, res) {
     res.send(result.toString());
 });
 
+app.post("/multiply", function (req, res) {
+    const number1 = Number(req.body.N1);
+    const number2 = Number(req.body.N2);
+    const result = number1 * number2;
+    res.send(result.toString());
+});
+
 app.get("/bmi", function (req, res) {
     res.sendFile(__dirname + "/BmiCalculator.html");
 });
