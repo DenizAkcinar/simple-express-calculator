@@ -12,7 +12,7 @@ app.post("/sum", function (req, res) {
     const number1 = Number(req.body.N1);
     const number2 = Number(req.body.N2);
     const result = number1 + number2;
-    res.send(result.toString());
+    res.send(result.toString()); 
 });
 
 app.post("/minus", function (req, res) {
